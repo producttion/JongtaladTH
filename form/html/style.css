@@ -1,0 +1,117 @@
+div.show-image {
+    background-image: url("https://scontent.fbkk2-5.fna.fbcdn.net/v/t34.0-12/20937659_2007684269463274_768762395_n.png?oh=ea27b0c8dcaea8e809427a60a38c37f9&oe=59999D36");
+    background-repeat: round;    
+    height:960px;
+    width: 826px;
+}
+
+div.x1 {
+    height:147px;
+    width: 826px;
+    /* float: left; */
+    /* background-color:rgba(255, 0, 46, 0.47); */
+}
+ div.x2 {
+    height:813px;
+    width: 34px;
+    float: left;   
+    /* background-color:rgba(0, 9, 255, 0.60); */
+}
+
+div.x3 {
+    height:813px;
+    width: 107px;
+    float: left;   
+    /* background-color:rgba(11, 28, 228, 0.60); */
+}
+div.x4 {
+    height:613px;
+    width: 685px;
+    float: left;   
+    /* background-color:rgba(11, 28, 228, 0.60); */
+}
+div.x5 {
+    height:96px;
+    width: 677px;
+    float: left;
+    /* background-color:rgba(24, 30, 199, 0.71); */
+}
+div.x6 {
+    height:614px;
+    width: 65px;
+    float: left;
+    /* background-color:rgba(24, 30, 199, 0.71); */
+}
+div.x7 {
+    height:554px;
+    width: 507px;
+    float: left;
+    /* background-color:rgba(31, 24, 199, 0.71); */
+}
+div.x8 {
+    height:454px;
+    width: 507px;
+    float: left;
+    /* background-color:rgba(31, 24, 199, 0.71); */
+}
+div.blog1 {
+    height:718px;
+    width: 107px;
+    float: left;
+    /* background-color:rgba(26, 197, 199, 0.71); */
+}
+
+div.blog2 {
+    height:104px;
+    width: 677px;
+    float: left;
+    /* background-color:rgba(26, 197, 199, 0.71); */
+}
+
+div.blog3 {
+    height:554px;
+    width: 107px;
+    float: left;
+    /* background-color:rgba(26, 197, 199, 0.71); */
+}
+div.blog4 {
+    height:100px;
+    width: 500px;
+    float: left;
+    /* background-color:rgba(26, 197, 199, 0.71); */
+}
+
+div.blogH {
+    width:100px;
+    height:81px;
+    margin: auto;
+    border: 4px solid #FFFFFF;
+}
+div.blogW {
+    width:88px; 
+    height:91px;
+    float: left;
+    margin: auto;
+    border: 4px solid #FFFFFF;
+}
+input.button1 {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 30px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+input.button2 {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 35px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
