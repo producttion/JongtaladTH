@@ -63,7 +63,7 @@ $(document).ready(function () {
             }
             blog4.append(`
             <div class="blogW">
-            <input onClick="clickCheck()" type="button" value="A`+numB7+`" class="button button2">
+            <input onClick="clickCheck()" type="button" value="B`+numB7+`" class="button button2">
             </div>
             `);
             var newList = $('#blog4');

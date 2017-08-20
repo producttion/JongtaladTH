@@ -5,7 +5,7 @@ import {
     TouchableHighlight
 } from 'react-native';
 import { MAPTASE } from '../form/Map';
-import Popup from '../form/Popup';
+import Padform from '../form/Padform';
 
 // import { dB, dbRef } from '../configFirebase'
 import *as firebase from "firebase";
@@ -19,43 +19,39 @@ var config = {
 }
 firebase.initializeApp(config);
 
-export var dbRef = firebase.database().ref("controler/setChecked")
+// export var dbRef = firebase.database().ref("controler/setChecked")
 
 export default class MapForm extends Component {
 
-    
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            contro: true
-        };
-        // var checkVal = 0;
-         dbRef.once('value', function (snapshot) {
-            
-                this.setState={
-                    contro: snapshot.val()
-                }
-           
-               
-            
-        });
-    }
+
+    // constructor(props) {
+    //     super(props);
+    //     this.state = {
+    //         contro: true
+    //     };
+    //     // var checkVal = 0;
+    //      dbRef.once('value', function (snapshot) {
+
+    //             this.setState={
+    //                 contro: snapshot.val()
+    //             }
+
+
+
+    //     });
+    // }
+
     render() {
         return (
             <View>
-                <View style={{ width: '100%', height: 25, backgroundColor: 'powderblue' }} />
-                <View style={{ width: '100%', height: 80, backgroundColor: '#34495e' }}>
-                </View>
-                {this.state.contro
-                    ? <View style={{ width: '100%', height: 600, backgroundColor: '#21618c' }}>
-                        <View style={styles.content}>
-                            <View style={styles.mapBox}>
-                                <WebView source={{ uri: MAPTASE }} style={styles.webOn} />
-                            </View>
+                <View style={{ width: '100%', height: 600, backgroundColor: '#21618c' }}>
+                    <View style={styles.content}>
+                        <View style={styles.mapBox}>
+                            <WebView source={{ uri: MAPTASE }} style={styles.webOn} />
                         </View>
                     </View>
-                    :<Popup/>}
+                </View>
             </View>
 
         );

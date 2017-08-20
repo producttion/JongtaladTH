@@ -5,19 +5,31 @@
  */
 
 import React, { Component } from 'react';
-import {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
+import { AppRegistry, StyleSheet,Text, View,TouchableHighlight} from 'react-native';
 import MapForm from './form/MapForm';
 import Popup from './form/Popup';
+import Padform from './form/Padform';
 
 export default class JongtaladTH extends Component {
+  state = {
+    modalVisible: false,
+  }
+  setModalVisible(visible) {
+    this.setState({ modalVisible: visible });
+  }
   render() {
     return (
-        <MapForm/>
+      <View>
+        <View style={{ width: '100%', height: 25, backgroundColor: 'powderblue' }} />
+        <View style={{ width: '100%', height: 80, backgroundColor: '#34495e' }}>
+          <TouchableHighlight onPress={() => { this.setModalVisible(true) }}>
+            <Text>Show Modal</Text>
+          </TouchableHighlight>
+        </View>
+        {this.state.modalVisible
+          ? <Padform />
+          : <MapForm />}
+      </View>
     );
   }
 }
